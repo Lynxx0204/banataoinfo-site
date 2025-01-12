@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #ededed;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ededed;
+  font-size: 18px;
+  margin-left: 35px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: #00abf0;
+}
+
+.navbar a:target,
+section:target + nav a {
+  color: #00abf0;
+}
+
+.home {
+  display: flex;
+  background: url('mamamo.webp');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10%;
+}
+ 
+.home-info h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #00abf0;
+  margin-top: 90px;
+}
+
+.sched {
+  margin-left: 10px;
+  width: 800px;
+  cursor: pointer;
+}
